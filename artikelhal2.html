@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artikel Halaman 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function tentangkami() 
+		{
+			var win = window.open('tentangkami.html','_self');
+			win.focus();
+		}
+		var	prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() 
+			{
+			var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos ) 
+	  			{
+	    			document.getElementById("sidenav").style.left = "0";
+	  			} 
+	  				else 
+	  			{
+	    			document.getElementById("sidenav").style.left = "-140px";
+	  			}
+	  		prevScrollpos = currentScrollPos;
+			};
+		function openPage(evt,pageName) 
+		{
+  			var i, tabmenu, sticky;
+  			tabmenu = document.getElementsByClassName("tabmenu");
+  			for (i = 0; i < tabmenu.length; i++) {
+    				tabmenu[i].style.display = "none";
+  				}
+  					sticky = document.getElementsByClassName("sticky");
+  			for (i = 0; i < sticky.length; i++) 
+  				{
+    				sticky[i].className = sticky[i].className.replace("active","")
+  				}
+ 					document.getElementById(pageName).style.display = "block";
+  				evt.currentTarget.className += "active;"
+		}
+
+// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+	</script>	
+</head>
+
+<!-- =============== JUMBOTRON =============== -->
+
+<body id="wrapper" class="wrapper">	
+	<a href="#" style="text-decoration: none">
+		<div class="jumbotron text-center">
+			<h1><b>membadut.id </b></h1>
+			<p><small>Tempat Berbagi dan Belajar</small></p>
+		</div>
+	</a>
+
+
+	<!-- =============== NABVAR ============ -->
+
+
+<form style="text-align: center;">
+	<div id="navbar">
+		<div class="sticky">
+			<a href="index.html"><button type="button">Teratas</button></a>
+			<a href="artikel.html" class="active"><button type="button">Artikel</button></a>
+			<a href="makalah.html"><button type="button">Makalah</button></a>
+			<a href="jurnal.html"><button type="button">Jurnal</button></a>
+			<a href="tentangkami.html"><button type="button">Tentang Kami</button></a>
+		</div>
+	</div>
+<hr class="garis" style="border-top: 1px solid #000000; margin-top: 0px;" width="65%" align="center">
+</form>
+
+
+	<!-- ============== NAVIGASI ============== -->
+
+<div id="sidenav" class="sidenavbar">
+	<a href="index.html" id="navteratas">Teratas</a>
+	<a href="artikel.html" id="navartikel">Artikel</a>
+	<a href="makalah.html" id="navmakalah">Makalah</a>
+	<a href="jurnal.html" id="navjurnal">Jurnal</a>
+	<a href="tentangkami.html" id="navtentang">Tentang Kami</a>
+</div>	
+<body>
+<div class="row">
+	<div class="col-md-4">
+		<div class="papers text-center">
+			<img src="gambar/artikel4.jpg"><br>
+			<h4 class="notopmarg nobotmarg"> by : arif putra</h4>
+		</div>
+	</div>
+
+	<div class="col-md-5">
+		<p class="judulartikel"><b>gambar.1</b></p>
+		<p class="reviewartikel"> </p>
+		<a href=""><p class="readmoreartikel">Read More</p></a>
+	</div>
+
+	<div class="col-sm-3">
+		<div>
+			<h2>Cari Artikel</h2>
+			<input type="text" id="myInput" placeholder="Cari Artikel">
+		</div><br>
+		<div id="tahunartikel">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Desember 2021<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">Pemberdayan SDM</a></li>
+	      			<li><a href="#">Kute Bali</a></li>
+	      			<li><a href="#">Cakrawal</a></li>
+				</ul>
+			</div><br>
+
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">November 2021<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">SI UAD</a></li>
+	      			<li><a href="#">Pendidikan Karakter</a></li>
+	      			<li><a href="#">Calon Presiden</a></li>
+				</ul>
+			</div><br>
+
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Oktober 2021<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">Menjadi Mimpi</a></li>
+	      			<li><a href="#">Cacat Fisik</a></li>
+				</ul>
+			</div><br>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-4">
+		<div class="papers text-center">
+			<img src="gambar/artikel5.jpg"><br>
+			<h4 class="notopmarg nobotmarg"> by : indah purwanti</h4>
+		</div>
+	</div>
+
+	<div class="col-md-5">
+		<p class="judulartikel"><b>gambar.2</b></p>
+		<p class="reviewartikel"> </p>
+		<a href=""><p class="readmoreartikel">Read More</p></a>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-4">
+		<div class="papers text-center">
+			<img src="gambar/artikel6.jpg"><br>
+			<h4 class="notopmarg nobotmarg"> by : amelia putri</h4>
+		</div>
+	</div>
+
+	<div class="col-md-5">
+		<p class="judulartikel"><b>gambar.3</b></p>
+		<p class="reviewartikel"> </p>
+		<a href=""><p class="readmoreartikel">Read More</p></a>
+	</div>
+</div>
+<br>
+
+<!-- ============= PAGINATION =================== --> 
+<div id="settingpagination">
+<div class="row">
+	<div class="col-sm-4">
+		
+	</div>
+	<div class="col-sm-4">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="artikel.html">1</a></li>
+    <li class="page-item active"><a class="page-link" href="artikelhal2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="">3</a></li>
+    <li class="page-item"><a class="page-link" href="">Next</a></li>
+  </ul>
+  	</div>
+</div>
+</div>
+
+<!-- ================ FOOTER ============== -->
+
+ <section id="footer">
+ 	<p class="text-center">
+		<a href="#wrapper" class="gototop">
+			<img src="ikon/up.png"></a>
+	</p>
+	<div class="container">
+		<ul class="text-center">
+			<div class="link">
+			<img src="ikon/email.png"><a href="www.gmail.com"></a>
+			<img src="ikon/ig.png"><a href="http:\\www.instagram.com"></a>
+			<img src="ikon/fb.png"><a href="#"></a>	</div>		
+		</ul>
+		<p class="text-center">
+			&copy; membadut.id<br>
+		</p>
+	</div>
+ </section>
+</body>
+</html>

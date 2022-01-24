@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Jurnal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function tentangkami() 
+		{
+			var win = window.open('tentangkami.html','_self');
+			win.focus();
+		}
+		var	prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() 
+			{
+			var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos ) 
+	  			{
+	    			document.getElementById("sidenav").style.left = "0";
+	  			} 
+	  				else 
+	  			{
+	    			document.getElementById("sidenav").style.left = "-140px";
+	  			}
+	  		prevScrollpos = currentScrollPos;
+			};
+		function openPage(evt,pageName) 
+		{
+  			var i, tabmenu, sticky;
+  			tabmenu = document.getElementsByClassName("tabmenu");
+  			for (i = 0; i < tabmenu.length; i++) {
+    				tabmenu[i].style.display = "none";
+  				}
+  					sticky = document.getElementsByClassName("sticky");
+  			for (i = 0; i < sticky.length; i++) 
+  				{
+    				sticky[i].className = sticky[i].className.replace("active","")
+  				}
+ 					document.getElementById(pageName).style.display = "block";
+  				evt.currentTarget.className += "active;"
+		}
+
+// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+	</script>	
+</head>
+<body id="wrapper" class="wrapper">
+	<a href="#" style="text-decoration: none">
+		<div class="jumbotron text-center">
+			<h1><b>membadut.id </b></h1>
+			<p><small>Tempat Berbagi dan mencari cuan</small></p>
+		</div>
+	</a>
+
+
+	<!-- =============== NABVAR ============ -->
+
+
+<form style="text-align: center;">
+	<div id="navbar">
+		<div class="sticky">
+			<a href="index.html"><button type="button">Teratas</button></a>
+			<a href="artikel.html"><button type="button">Artikel</button></a>
+			<a href="makalah.html"><button type="button">Makalah</button></a>
+			<a href="jurnal.html" class="active"><button type="button">Jurnal</button></a>
+			<a href="tentangkami.html"><button type="button">Tentang Kami</button></a>
+		</div>
+	</div>
+<hr class="garis" style="border-top: 1px solid #000000; margin-top: 0px;" width="65%" align="center">
+</form>
+
+
+<!-- ============== NAVIGASI ============== -->
+	
+<div id="sidenav" class="sidenavbar">
+	<a href="index.html" id="navteratas">Teratas</a>
+	<a href="artikel.html" id="navartikel">Artikel</a>
+	<a href="makalah.html" id="navmakalah">Makalah</a>
+	<a href="jurnal.html" id="navjurnal">Jurnal</a>
+	<a href="tentangkami.html" id="navtentang">Tentang Kami</a>
+</div>
+
+<!-- ================== KONTEN =============== -->
+
+<div id="kerangka">
+
+<div class="content">
+
+<div id="tanggal"><p><b>Updated on : desember 11, 2021 </b></p></div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="papers text-center">
+				<img src="gambar/j1.PNG" width="370px" height="450px" alt=""><br><br>
+				<h4 class="notopmarg nobotmarg">by : arif putra </h4>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<p class="juduljurnal"><b>modul jaringan komputer</b></p>
+			<p class="reviewjurnal">modul ini tentang jaringan komputer, dimana mahasiswa dapat mengetahui jenis jenis subneting, jenis jenis ip, jenis jenis konfigurasi di cisco paket tracer, dan paham tentang topologi jaringan</p>
+			<a href="#"><p class="readmorejurnal">Read more ... </p></a>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="carijurnal">
+				<p>Cari Jurnal</p>
+				<input type="text" name="carijurnal" id="myInput" placeholder="Cari Jurnal">
+			</div>
+		</div>
+	</div>
+<br>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="papers text-center">
+				<img src="gambar/j2.PNG" width="370px" height="450px" alt=""><br><br>
+				<h4 class="notopmarg nobotmarg">by : amelia putri </h4>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<p class="juduljurnal"><b>Jurnal webgis <br> Teori, Penelitian dan Pengembangan</b></p>
+			<p class="reviewjurnal">Informasi geospasial infrastruktur kota Meulaboh merupakan suatu titik lokasi 
+				infrastruktur yang di dalamnya terkandung informasi-informasi geospasial, seperti 
+				titik koordinat dan atribut-atribut pendukung lainnya. Infrastrtuktur adalah salah 
+				satu perangkat perkotaan yang menjadi pendukung tatanan suatu wilayah, baik itu 
+				dari segi fisik maupun non-fisik. Persebaran infrastruktur di kota Meulaboh 
+				tentunya berada dalam suatu wilayah yang sangat luas, hal inilah yang mendorong 
+				penelitian ini dilakukan untuk merancang dan membangun sistem informasi 
+				geografis berbasis web yang dapat diakses secara real time. Sistem informasi 
+				geografis berbasis web yang lebih dikenal dengan sebutan webGIS pada penelitian 
+				ini dikembangkan menggunakan Google maps API V3. Penggunaan API Google
+				tersebut berfungsi untuk mendukung serta menyediakan fitur pemetaan berbasis 
+				web menggunakan layanan Google maps. Pengujian sistem dilakukan dengan 
+				menggunakan metode System Usability Scale (SUS) yang berfungsi untuk 
+				mengukur tingkat kelayakan sistem webGIS yang sudah dibuat. Hasil pengujian 
+				dengan menyebarkan kuesioner ke 30 orang responden menyatakan bahwa webGIS
+				yang dibuat layak digunakan dengan nilai percentile rank sebesar 89,57% grade A-
+				. Penelitian ini juga melakukan perbandingan dengan webGIS kota Banda Aceh 
+				yang sudah terlebih dahulu ada. Proses perbandingan menghasilkan kesimpulan 
+				bahwa webGIS kota Meulaboh lebih baik dibandingkan webGIS kota Banda Aceh 
+				pada 2 elemen pertanyaan yaitu tampilan dan interaksi serta fasilitas dan fitur 
+				dengan skor 31,50 berbanding 27,41 dan 32,08 berbanding 29,58. Sedangkan untuk 
+				elemen pertanyaan tentang kepuasan pengguna, webGIS kota Banda Aceh unggul 
+				dengan skor 15,58 berbanding 16,41</p>
+			<a href="#"><p class="readmorejurnal">Read more ... </p></a>
+		</div>
+	</div>
+<br>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="papers text-center">
+				<img src="gambar/jurnal3.jpg" width="370px" height="450px" alt=""><br><br>
+				<h4 class="notopmarg nobotmarg">by : indah purwanti </h4>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<p class="juduljurnal"><b>Jurnal Penelitian Dan Pembelajaran <br>Matematika</b></p>
+			<p class="reviewjurnal">The objective of this research was to investigate the effect of the learning model on the mathematic communication of the students. The learning models compared were the reflective learning model with mathematics realistic in Islamic nuance and the direct learning model. The type of the research was a quasi-experimental research. Its population was all of the students in grade VII in MTs Al-Khairiyah Nature in academic year 2015/2016. The size of the sample was 44 students consisted of 22 in experimental class 1 and 22 in control class 1. The instruments used were mathematics communication test on the learning material of the polyhedron. The data were analyzed by using t-test. The conclusions of the research were as there is the effect of reflective learning model with mathematics realistic in Islamic nuance resulted in a better than the direct learning model.</p>
+			<a href="#"><p class="readmorejurnal">Read more ... </p></a>
+		</div>
+	</div>
+	</div>
+</div>
+
+</form>
+
+ 
+<!-- ================ FOOTER ============== -->
+
+ <section id="footer">
+ 	<p class="text-center">
+		<a href="#wrapper" class="gototop">
+			<img src="ikon/up.png"></a>
+	</p>
+	<div class="container">
+		<ul class="text-center">
+			<div class="link">
+			<img src="ikon/email.png"><a href="www.gmail.com"></a>
+			<img src="ikon/ig.png"><a href="http:\\www.instagram.com"></a>
+			<img src="ikon/fb.png"><a href="#"></a>	</div>		
+		</ul>
+		<p class="text-center">
+			&copy; membadut.id<br>
+		</p>
+	</div>
+ </section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>ISI TERATAS 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function tentangkami() 
+		{
+			var win = window.open('tentangkami.html','_self');
+			win.focus();
+		}
+		var	prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() 
+			{
+			var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos ) 
+	  			{
+	    			document.getElementById("sidenav").style.left = "0";
+	  			} 
+	  				else 
+	  			{
+	    			document.getElementById("sidenav").style.left = "-140px";
+	  			}
+	  		prevScrollpos = currentScrollPos;
+			};
+	</script>
+</head>
+<body>
+<!-- =============== JUMBOTRON =============== -->
+
+<body id="wrapper" class="wrapper">	
+	<a href="#" style="text-decoration: none">
+		<div class="jumbotron text-center">
+			<h1><b>membadut.id </b></h1>
+			<p><small>Tempat Berbagi dan mencari cuan</small></p>
+		</div>
+	</a>
+
+
+	<!-- =============== NABVAR ============ -->
+
+
+<form style="text-align: center;">
+	<div id="navbar">
+		<div class="sticky">
+			<a href="index.html"><button type="button">Teratas</button></a>
+			<a href="artikel.html" class="active"><button type="button">Artikel</button></a>
+			<a href="makalah.html"><button type="button">Makalah</button></a>
+			<a href="jurnal.html"><button type="button">Jurnal</button></a>
+			<a href="tentangkami.html"><button type="button">Tentang Kami</button></a>
+		</div>
+	</div>
+<hr class="garis" style="border-top: 1px solid #000000; margin-top: 0px;" width="65%" align="center">
+</form>
+
+<!--================== SLIDE ================ -->
+
+<div id="sidenav" class="sidenavbar">
+	<a href="index.html" id="navteratas">Teratas</a>
+	<a href="artikel.html" id="navartikel">Artikel</a>
+	<a href="makalah.html" id="navmakalah">Makalah</a>
+	<a href="jurnal.html" id="navjurnal">Jurnal</a>
+	<a href="tentangkami.html" id="navtentang">Tentang Kami</a>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+			<div class="papers text-center">
+			<img src="gambar/contoh1.png" alt=""><br><br>
+			<h4 class="notopmarg nobotmarg" style="color: #1f3d06;">by : arif putra</h4><br>
+			<button class="download"><i class="fa fa-download"></i> Download </button>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<p class="reviewjurnal"> 
+		</p>
+	</div>	
+</div>
+<!-- ================ FOOTER ============== -->
+
+
+ <section id="footer">
+ 	<p class="text-center">
+		<a href="#wrapper" class="gototop">
+			<img src="ikon/up.png"></a>
+	</p>
+	<div class="container">
+		<ul class="text-center">
+			<div class="link">
+			<img src="ikon/email.png"><a href="www.gmail.com"></a>
+			<img src="ikon/ig.png"><a href="http:\\www.instagram.com"></a>
+			<img src="ikon/fb.png"><a href="#"></a>	</div>		
+		</ul>
+		<p class="text-center">
+			&copy; ngetik.id<br>
+		</p>
+	</div>
+ </section>
+</body>
+</html>

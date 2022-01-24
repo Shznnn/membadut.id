@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Project Teknologi Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function tentangkami() 
+		{
+			var win = window.open('tentangkami.html','_self');
+			win.focus();
+		}
+		var	prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() 
+			{
+			var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos ) 
+	  			{
+	    			document.getElementById("sidenav").style.left = "0";
+	  			} 
+	  				else 
+	  			{
+	    			document.getElementById("sidenav").style.left = "-140px";
+	  			}
+	  		prevScrollpos = currentScrollPos;
+			};
+		function openPage(evt,pageName) 
+		{
+  			var i, tabmenu, sticky;
+  			tabmenu = document.getElementsByClassName("tabmenu");
+  			for (i = 0; i < tabmenu.length; i++) {
+    				tabmenu[i].style.display = "none";
+  				}
+  					sticky = document.getElementsByClassName("sticky");
+  			for (i = 0; i < sticky.length; i++) 
+  				{
+    				sticky[i].className = sticky[i].className.replace("active","")
+  				}
+ 					document.getElementById(pageName).style.display = "block";
+  				evt.currentTarget.className += "active;"
+		}
+
+// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+	</script>	
+</head>
+
+<!-- =============== JUMBOTRON =============== -->
+<div id="header">
+<body id="wrapper" class="wrapper">	
+	<a href="#" style="text-decoration: none">
+		<div class="jumbotron text-center">
+			<h1><b>membadut.id </b></h1>
+			<p><small>Tempat Berbagi dan mencari cuan</small></p>
+		</div>
+	</a>
+</div>
+
+	<!-- =============== NABVAR ============ -->
+
+
+<form style="text-align: center;">
+	<div id="navbar">
+		<div class="sticky">
+			<a href="index.html" class="active"><button type="button">Teratas</button></a>
+			<a href="artikel.html"><button type="button">Artikel</button></a>
+			<a href="makalah.html"><button type="button">Makalah</button></a>
+			<a href="jurnal.html"><button type="button">Jurnal</button></a>
+			<a href="tentangkami.html"><button type="button">Tentang Kami</button></a>
+		</div>
+	</div>
+<hr class="garis" style="border-top: 1px solid #b1d609; margin-top: 0px;" width="65%" align="center">
+</form>
+
+
+	<!-- ============== NAVIGASI ============== -->
+
+<div id="sidenav" class="sidenavbar">
+	<a href="index.html" id="navteratas">Teratas</a>
+	<a href="artikel.html" id="navartikel">Artikel</a>
+	<a href="makalah.html" id="navmakalah">Makalah</a>
+	<a href="jurnal.html" id="navjurnal">Jurnal</a>
+	<a href="tentangkami.html" id="navtentang">Tentang Kami</a>
+</div>	
+
+	<!-- ============== SLIDER ============== -->
+
+<div class="container">
+	<div class="col-sm-12">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+	<!-- indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+	<!-- slide -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="gambar/slide1.png" alt="cyber">
+					<div class="carousel-caption">
+						<h3>cuan.cuan</h3>
+						<p>crypto2021</p>
+					</div>
+			</div>
+			<div class="carousel-item">
+				<img src="gambar/slide2.jpg" alt="kucing">
+			</div>
+			<div class="carousel-item">
+				<img src="gambar/slide3.jpg" alt="lampu">
+			</div>		
+		</div>
+	<!-- kontroler -->
+			<div class="kontrol">
+				<a href="#demo" class="carousel-control-prev" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span></a>
+				<a href="#demo" class="carousel-control-next" data-slide="next">
+					<span class="carousel-control-next-icon"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+
+
+<!-- ========= JUDUL,GARIS ============== -->
+
+
+
+	<hr class="garis" style="border-top: 1px solid #079778; margin-top: 0px;" width="90%" align="center">
+	<p class="latest"><b> Latest </b></p>
+	<hr class="garis" style="border-top: 1px solid #000000; margin-top: 10px;" width="80%" align="center">
+
+
+
+<!-- =============== ISI KONTEN ============= -->
+
+<div id="kerangka">
+
+<div class="content">
+
+<div id="tanggal"><p><b>Updated on : December 23, 2018 </b></p></div>
+
+	<div class="row">
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<a href="isiteratas1.html"><img src="gambar/berita1.png" alt=""><br/><br>
+					<h4 class="notopmarg nobotmarg"></h4>
+					<p class="enter">
+					</p></a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="gambar/" alt=""><br/><br>
+					<h4 class="notopmarg nobotmarg"></h4>
+					<p class="enter">
+					</p>
+				</div>
+			</div>
+	</div>
+	<div class="row">
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="gambar/berita2.PNG" alt=""><br/><br>
+					<h4 class="notopmarg nobotmarg"></h4>
+					<p class="enter">
+					</p>
+				</div>
+			</div>
+	</div>
+
+</div>
+<div class="row">
+		<div class="col-md-6">
+			<div class="papers text-center">
+				<img src="gambar/slide3.PNG" alt=""><br/><br>
+				<h4 class="notopmarg nobotmarg"></h4>
+				<p class="enter">
+				</p>
+			</div>
+		</div>
+</div>
+<br>
+<div id="tanggal"><p><b>Updated on :23 December 2021 10:45  </b></p></div>
+	<div class="row">
+		<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="gambar/contoh4.PNG" alt=""><br/><br>
+					<h4 class="notopmarg nobotmarg"></h4>
+					<p class="enter">
+					</p>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+
+ <!-- ================ FOOTER ============== -->
+
+
+ <section id="footer">
+ 	<p class="text-center">
+		<a href="#wrapper" class="gototop">
+			<img src="ikon/up.png"></a>
+	</p>
+	<div class="container">
+		<ul class="text-center">
+			<div class="link">
+			<img src="ikon/email.png"><a href="www.gmail.com"></a>
+			<img src="ikon/ig.png"><a href="http:\\www.instagram.com"></a>
+			<img src="ikon/fb.png"><a href="#"></a>	</div>		
+		</ul>
+		<p class="text-center">
+			&copy; membadut.id<br>
+		</p>
+	</div>
+ </section>
+</body>
+</html>

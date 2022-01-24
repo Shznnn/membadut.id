@@ -1,0 +1,472 @@
+
+/*=============== HEADER -------- */
+
+
+
+/* ============= WEBPAGE SETTING ===========*/ 
+
+#container
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 1320px;
+        width: auto;
+    }
+
+/* ========== JUMBOTRON & NAVBAR ==========*/
+    
+.jumbotron
+    {
+		background: url("gambar/1.jpg");
+		height: 700px;
+        max-width: 1320px;
+		width: auto;
+        margin-left: auto;
+        margin-right: auto;
+		font-family: cursive;
+		size: 50px;
+		color: grey;
+	}
+.jumbotron h1
+    {
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80px;
+        color:#334d4d;
+    }
+.jumbotron small
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        color:#000000;
+    }
+#navbar
+    {
+        width: auto;
+    }
+button 
+    {
+        width: auto;
+        padding: 10px 38px;
+        background-color: transparent;
+        border: none;
+        margin-top: -20px;
+    }
+button:hover
+    {
+    	color: #ffffff;
+    	background-color: #0bd4a2;
+    	cursor: pointer;
+    	transition: 0.5s;
+    }
+a.active
+    {
+        padding: 10px 38px;
+        background-color: #0bd4a2;
+    }
+a
+    {
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+/*=========== SLIDE ==============*/
+
+div.container
+    {
+        width: auto;
+        max-height: 450px;
+    }
+.carousel-inner img
+    {
+        width: 100%;
+        max-height: 350px;
+    }
+
+/*============== JUDUL DAN KONTEN =========*/
+
+p.latest
+    {
+        font-family: 'PT Mono', monospace;
+        font-size: 36px;        
+        font-weight: 500;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        color: black;   
+    }
+#kerangka
+    {
+        width: auto;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: grey;
+        opacity: 0.7;
+    }
+#kerangka:hover
+    {
+        opacity: 1;
+        transition-delay: 0.1s;
+        background-color: #757a77;
+    }
+p.enter
+    {
+        width: auto;
+        max-width: 450px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        word-wrap: break-word;
+    }
+div.row
+    {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#tanggal
+    {
+        margin-left: 50px ;
+        font-size: 18px;
+        color: red;
+        font-style: italic;
+    }
+h4,p.enter
+    {
+        color: white;
+    }
+
+
+
+/* ========== SIDE NAVBAR ==========*/
+
+#sidenav a
+    {
+        position: fixed;
+        margin-top: 50px;
+        left: -150px;
+        transition: 0.4s;
+        padding: 18px;
+        width: 180px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        opacity: 0.65;
+    }
+#sidenav a:hover
+    {
+        left: 0;
+        opacity: 1;
+        z-index: 1000;
+    }
+#navteratas 
+    {
+        top: 20px;
+        background-color: #4CAF50;
+    }
+
+#navartikel
+    {
+        top: 80px;
+        background-color: #2196F3;
+    }
+
+#navmakalah
+    {
+        top: 140px;
+        background-color: #f44336;
+    }
+#navjurnal 
+    {
+        top: 200px;
+        background-color: #555;
+    }
+#navtentang
+    {
+        top: 260px;
+        background-color: #891fba;
+    }
+
+
+/*============ pagination ========== */
+
+#settingpagination
+    {   
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+/*============ FOOTER ==========*/
+
+#footer
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        max-width: 1320px;
+        height: 250px;
+        width: auto;
+        background-color: #0bd4a2;
+    }
+section img
+    {
+        max-height: 50px;
+        max-width: 50px;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+#footer div.container
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+/*================ STICKY ======*/
+
+
+.content
+    {
+        position:relative; /*posisi disarankan*/
+        min-height:1500px; /*kalau website sudah selesai, baris ini dihapus*/
+        margin:0px 20px;
+    }
+.sticky 
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 38px;
+        margin-top: 10px;
+        color: #7ebfda;
+        cursor: pointer;
+        transition: 0.5s;
+  }
+
+.sticky + .content 
+    {
+        padding-top: 60px;
+    }
+
+/*===========================
+        tentang
+============================*/
+#tentang
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 1080px;
+        width: auto;
+    }
+#latarbelakang
+    {
+        max-width: 1320px;
+        width: auto;
+        height: 700px;
+        background-color: #2c967f;
+        margin-right: auto;
+        margin-left: auto;
+    }
+.section-heading p
+    {
+        max-width: 65%;
+        width: auto;
+        word-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.box
+    {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1080px;
+        width: auto;
+    }
+p.subtittle,h3
+    {
+        font-size: 18px;
+        text-align: center;
+        color: rgb(16, 233, 233);
+     }
+p.subtittle
+    {
+        color: #0bd4a2;
+    }
+p.quote
+    {
+        font-style: italic;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 1000;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+p.medsos
+    {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 800;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: #16f5f5;
+    }
+.box img
+    {
+        margin-right: auto;
+        margin-left:20px;
+        max-height:250px; 
+        max-width:250px;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+
+/* ========================================= 
+                    MAKALAH
+    =========================================*/
+
+.by
+    {
+        position: absolute;
+        bottom: -200px;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        padding: 5px 120px;
+        margin-left: -5px;
+        background-color: #efeba2;
+    }
+p.readmoremakalah
+    {
+        margin-left: 380px;
+        color:  #000000;
+    }
+p.judulmakalah
+    {
+        color: #000000;
+        font-size: 22px;
+        text-align: center;
+        margin-left: -22px;
+        font-weight: 700;
+    }
+p.reviewmakalah
+    {
+        width: auto;
+        margin-right: 80px;
+        text-align: left;
+        margin-left: 20px;
+        text-indent: 50px;
+        word-wrap: break-word;
+        color: #000000;
+    }
+div.carimakalah
+    {    
+        padding: 26px;
+        background-color: #07f5b9;  
+    }
+div.boxmakalah
+    {
+        background-color: rgb(25, 216, 200);
+        color: #000000;
+        max-width: 550px;
+    }
+#myInput
+    {
+        border-radius: 10%;
+        height: 40px;
+    }
+
+ /* ==================================
+                JURNAL
+    ================================== */
+
+p.juduljurnal
+    {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        color: white;
+        margin-left: -20px;
+    }
+p.reviewjurnal
+    {
+        width: auto;
+        max-width: 450px;
+        text-align: justify;
+        margin-left: 20px;
+        text-indent: 50px;
+        word-wrap: break-word;
+        color: #000000;
+    }
+p.readmorejurnal
+    {
+        margin-left: 260px;
+        color:  #0bd4a2;
+    }
+div.carijurnal
+    {
+        margin-left: -60px;
+    }
+
+/* ==================================
+                ARTIKEL
+    ================================== */
+
+p.judulartikel
+    {
+        color: black;
+        text-align: center;
+        margin-left: -40px; 
+    }
+p.reviewartikel
+    {
+        width: auto;
+        max-width: 350px;
+        text-align: justify;
+        margin-left: -20px;
+        text-indent: 30px;
+        word-wrap: break-word;
+        color: #000000;
+    }
+p.readmoreartikel
+    {
+      margin-left: 200px;
+    }
+
+/* ==================================
+                ISI TERATAS 1
+    ================================== */
+buttton.download 
+{
+  background-color: DodgerBlue;
+  border: none;
+  color: rgb(31, 216, 216);
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+button.download:hover {
+  background-color: RoyalBlue;
+}
